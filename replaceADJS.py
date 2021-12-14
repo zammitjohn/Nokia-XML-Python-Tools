@@ -40,8 +40,8 @@ for i in range(0, n):
 
 print('_' * 10)  
 dest_RNCID = int(input("Enter destination RNC: "))
-dest_MCC = int(input("Enter destination MCC: "))
-dest_MNC = int(input("Enter destination MNC: "))
+dest_MCC = input("Enter destination MCC: ")
+dest_MNC = input("Enter destination MNC: ")
 dest_LAC = int(input("Enter destination LAC: "))
 dest_RAC = int(input("Enter destination RAC: "))
 
@@ -52,8 +52,8 @@ for distName, cellId in ADJS_toClear(XMLroot, sourceCells).items():
     dest_scrCode = int(input("Enter destination SCR Code: "))
     
     generatedXML += '<managedObject class="ADJS" version="RNC20FP4" distName="' + distName + '" operation="update">'
-    generatedXML += '<p name="AdjsMCC">' + str(dest_MCC) + '</p>'
-    generatedXML += '<p name="AdjsMNC">' + str(dest_MNC) + '</p>'
+    generatedXML += '<p name="AdjsMCC">' + dest_MCC + '</p>'
+    generatedXML += '<p name="AdjsMNC">' + dest_MNC + '</p>'
     generatedXML += '<p name="AdjsRNCid">' + str(dest_RNCID) + '</p>'
     generatedXML += '<p name="AdjsCI">' + str(dest_ID) + '</p>'
     generatedXML += '<p name="AdjsLAC">' + str(dest_LAC) + '</p>'
