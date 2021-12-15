@@ -1,4 +1,4 @@
-# Nokia-XML-Tools
+# nokia-xml-tools
 
 ## GSM, UMTS
 
@@ -11,7 +11,13 @@ Create XML script from neighbour deletion plan [^2]. This is done by parsing an 
 ### [replaceADJS](replaceADJS.py)
 Update and define replacement ADJS to new destination cells. This script will generate XML script with updated neighbours by parsing network XML export [^1].
 
+## LTE
+
+### [cellTracing](cellTracing.py)
+Add cell tracing capabilities by providing list of MRBTS IDs [^3]. This script will generate XML script by parsing network XML export [^2].
+
 [^1]: The following steps should be followed to generate bulk CM exports:
 	1. As the omc user, log in to a virtual machine where the scripting service is running.
-	2. Execute the following command: `[omc]$ racclimx.sh -op Import_Export -fileFormat RAML2 -importExportOperation actualExport -fileName myFileName.xml -UIValues false`.
+	2. Execute the following command: `[omc]$ racclimx.sh -op Import_Export -fileFormat RAML2 -importExportOperation actualExport -fileName myFileName.xml -UIValues true`.
 [^2]: Neighbour .txt plans must be provided in the format `Create/Delete, SOURCE CELL ID, DESTINATION CELL ID`.
+[^3]: MRBTS ID assumed with format XX-YYY, with X being the area ID and Y being the site ID.
