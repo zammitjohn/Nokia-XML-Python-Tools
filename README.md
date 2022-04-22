@@ -6,10 +6,13 @@
 Compare actual ADxx network XML exports [^1] to neighbour creation plan [^2]. This script will output 3 text files: tokeep, tocreate, todelete.
  
 ### [deleteADJG](deleteADJG.py)
-Create XML script from neighbour deletion plan [^2]. This is done by parsing an network XML export [^1].
+Create XML script from neighbour deletion plan [^2]. This is done by parsing network XML export [^1].
 
 ### [replaceADJS](replaceADJS.py)
 Update and define replacement ADJS to new destination cells. This script will generate XML script with updated neighbours by parsing network XML export [^1].
+
+### [ADJXparser](ADJXparser.py)
+Create JSON files with ADJS and ADJG usage per cell. This is done by parsing network XML export [^1].
 
 ## LTE
 
