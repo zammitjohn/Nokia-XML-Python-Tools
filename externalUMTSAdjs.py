@@ -1,6 +1,6 @@
 """
 externalUMTSAdjs.py
-Create neighbour creation XML script for external UNTRAN cells with neighbour addition file. 
+Create neighbour creation XML script for external UMTS cells with neighbour addition file. 
 """
 
 import sys

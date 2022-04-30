@@ -16,7 +16,7 @@ Update and define replacement ADJS to new destination cells. This script will ge
 Create JSON files with ADJS and ADJG usage per cell. This is done by parsing network XML export [^1]. This is a CLI app, show CLI help with '-h'.
 
 ### [externalUMTSAdjs](externalUMTSAdjs.py)
-Uses JSON output from [ADJXparser](ADJXparser.py) to create ADJS neighbour creation XML script for external UNTRAN cells with neighbour addition file [^3]. This is a CLI app, show CLI help with '-h'.
+Uses JSON output from [ADJXparser](ADJXparser.py) to create ADJS neighbour creation XML script for external UMTS cells with neighbour addition file [^3]. This is a CLI app, show CLI help with '-h'.
 
 
 ## LTE
